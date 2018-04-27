@@ -46,8 +46,9 @@
 @media screen and (max-width: 768px) {
 
     .home{
-        height: 100%;
-        padding-top: 10%;
+        position: relative;
+        height: 100vh;
+        padding-top: 0;
     }
 
     header {
@@ -100,7 +101,7 @@
 
     .home-content {
         position: absolute;
-        bottom: 8%;
+        bottom: 8vh;
         right: auto;
         width: auto;
         padding: 0;
