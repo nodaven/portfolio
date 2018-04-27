@@ -1,0 +1,522 @@
+@media screen and (max-width: 1023px) {
+    
+/* --------關於我------- */
+
+.about-content{
+    flex-direction: column;
+}
+
+.about-content.bg{
+    flex-direction: row;
+}
+
+
+.left-text {
+    top: auto;
+    left: auto;
+    right: 40px;
+    bottom: -55px;
+}
+
+.right-text {
+    top: auto;
+    right: auto;
+    left: 30px;
+    bottom: -55px;
+}
+
+.skill-item{
+    margin: 0 3.2%;
+}
+
+.exp-name1,
+.exp-name2,
+.exp-name3,
+.exp-name4{
+    opacity: 0.8;
+}
+
+.davenphoto{
+    margin-bottom: 55px;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .home{
+        height: 100%;
+        padding-top: 10%;
+    }
+
+    header {
+        display: none;
+    }
+
+    #rwd_hamburger{
+        display: block;
+    }
+
+    .side-contact {
+        display: none;
+    }
+
+    #svg_layout {
+        display: none;
+    }
+
+    #bottom,
+    #top{
+        width: 3.5%;
+    }
+
+    .homebtn2{
+        width: 42px;
+      display: block;
+    }
+
+    #svg_layout2 {
+        display: block;
+    }
+
+    .rwd-logo{
+        width: 120px;
+        display: inline-block;
+        opacity: 0;
+        transition: .15s;
+    }
+
+    .rwd-logo.active{
+        opacity: 0.9;
+    }
+
+    #daven, #shape {
+        transform: scale(0.9, 0.9)translate(5%, 0);
+    }
+    #logo {
+        transform: scale(0.9, 0.9)translate(5%, -5%);
+    }
+
+    .home-content {
+        position: absolute;
+        bottom: 8%;
+        right: auto;
+        width: auto;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .flex-item.text img{
+        display: none;
+    }
+
+    .flex-item.work img{
+        border-radius: 0;
+    }
+
+    .footer-contact .icon{
+        font-size: 3em;
+    }
+
+    .topbtn{
+        font-size: 2em;
+    }
+
+    footer{
+        width: 100%;
+        padding: 0;
+    }
+
+   /* ------作品有關的------ */
+
+   .work-list {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       width: 100%;
+       padding-left: 0;
+       cursor: pointer;
+       margin-bottom: 0;
+   }
+
+   .flex-item.date{
+    display: none;
+   }
+
+   .flex-item.work {
+       text-align: center;
+       width: 100%;
+   }
+
+   .flex-item.text {
+       position: relative;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       bottom: auto;
+       padding: 10% 0 10% 30%;
+   }
+
+   .work-title::after {
+       opacity: 0.5;
+       left: 7.5%;
+   }
+
+
+   /* -------作品詳細介紹 -----*/
+   .work-top {
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+        padding: 0;
+   }
+
+   .work-left,
+   .work-right{
+    width: auto;
+   }
+   .work-right{
+    margin-left: 0;
+    width: 80%;
+   }
+
+   .work-info-container{
+    padding-top: 115px;
+   }
+
+   .work-info1::before{
+    top: -122px;
+   }
+
+
+/*------關於我------ */
+
+.aboutme2{
+    display: inline-block;
+    width: 120px;
+    position: absolute;
+    top: 3.5em;
+    left: 80px;
+}
+
+.about-container{
+    padding-top: 115px;
+}
+
+.skill-item{
+    margin: 0 2.5%;
+}
+
+.davenphoto{
+    margin-top: 15px;
+}
+
+.about-logo {
+    transform: scale(0.9,0.9);
+}
+
+.aboutlogoimg{
+    width: 80%;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+/* ---------關於我-------- */
+
+
+.about-content.bg{
+    flex-direction: column;
+}
+
+.skill-item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.skill-text1 {
+    margin: 5px 0;
+}
+
+.about-exp {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.flex-item.exp{
+    margin-left: 0;
+}
+
+.exp-name1,
+.exp-name2,
+.exp-name3,
+.exp-name4{
+    opacity: 0;
+}
+
+.exp-year{
+    line-height: 10px;
+}
+
+.exp-think {
+    font-size: 1.4em;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.about-logo {
+    transform: scale(0.85,0.85);
+    margin-bottom: 20px;
+}
+
+/* --------作品詳細介紹--------- */
+.work-info-flex{
+    width: 92%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgbox-left {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.imgbox-right {
+    width: 30%;
+}
+
+.imgbox-center-5{
+    width: 100%;
+}
+
+.imgbox-center{
+    display: inline-block;
+    width: 120%;
+}
+
+.work-info-flex.w05bg .imgbox-center{
+    width: 100%;
+}
+
+.work-info-flex.w04bg{
+    width: 75%;
+}
+
+.work-info-flex.w06bg{
+    width: 90%;
+}
+
+.work-info-flex.w06bg img{
+    width:75%;
+}
+
+.rwd-show{
+    display: block;
+}
+
+.rwd-hide{
+    display: none;
+}
+
+/* 作品詳介的footer */
+
+.nextbtn a span {
+    display: none;
+}
+
+.nextbtn i{
+    font-size: 1.2em;
+    margin: 0 5px 0 5px;
+  animation: none;
+}
+
+.nextbtn a {
+    margin-left: -120%;
+}
+
+
+/* 作品詳細介紹的分頁畫面 */
+
+}
+
+
+
+
+@media screen and (max-width: 639px) {
+    .about-logo {
+        transform: scale(0.7,0.7);
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    #bottom,
+    #top{
+        width: 3.7%;
+    }
+
+    .footer-contact .icon{
+        font-size: 2em;
+    }
+
+    .topbtn{
+        font-size: 1.5em;
+    }
+
+    .homebtn2{
+        top: 1.2em;
+        left: 1.5em;
+        width: 36px;
+    }
+
+    .hamburger{
+        top: 0.5em;
+        right: 0.8em;
+    }
+
+    .rwd-logo{
+        width: 80px;
+    }
+
+
+    #rwd_hamburger{
+        transform: scale(0.8,0.8);
+        transform-origin: center center;
+    }
+
+
+    .footer-contact img {
+        width: 38%;
+        opacity: 0.22;
+        position: absolute;
+        bottom: 0;
+        left: -50%;
+    }
+
+    .work-info1::before{
+        display: none;
+    }
+
+    .work-left,
+    .work-right{
+     padding: 0 10%;
+    }
+
+    .work-right{
+     line-height: 1.9em;
+    }
+
+
+/* ------關於我------ */
+
+.aboutme2{
+    display: inline-block;
+        width: 90px;
+        position: absolute;
+        top: 2em;
+        left: 65px;
+}
+
+
+.left-text {
+    font-size: 0.45em;
+    top: auto;
+    left: auto;
+    right: 40px;
+    bottom: -55px;
+}
+
+.right-text {
+    font-size: 0.45em;
+    top: auto;
+    right: auto;
+    left: 30px;
+    bottom: -55px;
+}
+
+.left-title::after,
+.right-title::after{
+    font-size: 0.7em;
+        line-height: 1.5em;
+}
+
+.left-text{
+    right: 20px;
+}
+
+.right-text{
+    left: 20px;
+}
+
+.aboutlogoimg{
+    width: 80%;
+}
+
+.about-logo {
+    transform: scale(0.9,0.9);
+}
+
+.aboutlogoimg{
+    width:55%;
+}
+
+.left-arrow {
+    top: 15%;
+    width: 40px;
+    left: 5px;
+}
+
+.right-arrow {
+    bottom: 55%;
+    width: 30px;
+    right: -5px;
+}
+
+.left-box {
+    top: 12%;
+    left: -183px;
+}
+
+.right-box {
+    right: -190px;
+}
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .about-logo {
+        transform: scale(0.8,0.8);
+    }
+
+}
+
+@media screen and (max-width: 374px) {
+
+    .about-logo {
+        transform: scale(0.7,0.7);
+    }
+
+}
+

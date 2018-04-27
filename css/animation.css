@@ -1,0 +1,372 @@
+#svg_layout2{
+  display: none;
+}
+
+
+
+#daven,
+#shape{
+  transform: scale(1.1,1.1)translate(-1%,-14%);
+}
+
+
+
+#circle,
+#circle-2,
+#leaf,
+#leaf-2,
+#path,
+#path-2{
+  stroke: none;
+  fill: none;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 100%;
+  stroke-width: 1px;
+  animation: 2.6s outline 1 forwards;
+}
+
+
+@keyframes outline {
+  from {
+    stroke: #5ed6c8;
+    stroke-dashoffset: 100%;
+  }
+  to {
+    stroke: #5ed6c8;
+    stroke-dashoffset: 0;
+    z-index: -1;
+  }
+}
+
+
+#eye{
+  stroke: none;
+  fill: none;
+  animation: 2.6s fill 1 forwards;  
+}
+
+
+#eye-2{
+  stroke: none;
+  fill: none;
+  transform: rotate(180deg);
+  animation: 2.6s fill 1 forwards,2s 2s eye-rotate2 1 forwards; 
+}
+
+/* 
+@keyframes eye-rotate2 {
+  from{
+    transform: rotate(0deg);
+    transform-origin: 47.2% 72.7%;
+  }
+  to {
+    transform: rotate(180deg);
+    transform-origin: 47.2% 72.7%;
+  }
+} */
+
+
+@keyframes fill {
+  from {
+    fill: #fff; 
+  }
+  to {
+    fill: #5ed6c8; 
+  }
+}
+
+
+@keyframes z-index {
+  from {
+    z-index:0;
+  }
+  to {
+    z-index:100;
+  }
+}
+
+
+#logo{
+  transform: scale(1,1)translate(5%,0);
+}
+
+#d,
+#a,
+#v,
+#e,
+#n,
+#h,
+#u,
+#a-2,
+#n-2,
+#g{
+	stroke:none;
+	fill:none;
+	stroke-dasharray: 100%;
+	stroke-dashoffset: 100%;
+	stroke-width: 1px;
+	animation: 2s text_line 1s 1 forwards;
+}
+
+
+@keyframes text_line{
+  0%{
+    stroke:#4d4d4d;
+    fill: #fff;
+    stroke-dashoffset: 100%;
+  }
+  50%{
+    stroke:#4d4d4d;
+    fill:#fff;
+    stroke-dashoffset: 0;
+  }
+  100%{
+    stroke:#4d4d4d;
+    fill: #4d4d4d;
+    stroke-dashoffset: 0;
+  }
+}
+
+
+#top,
+#bottom,
+#left,
+#right{
+  fill: none;
+  animation: 2.6s polygon 1 forwards;  
+}
+
+@keyframes polygon{
+  0%{
+    fill:#fff;
+  }
+  100%{
+    fill: #5ed6c8;
+  }
+}
+
+
+
+
+#top{
+  position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 3%;
+}
+
+#bottom{
+ position: absolute;
+     bottom: 20px;
+     left: 20px;
+     width: 2%; 
+}
+
+.MyTitle{
+	animation: 1s MyTitle 1.5s 1 forwards;  
+}
+.MyTitle:nth-child(2){
+	animation: 1s MyTitle 2s 1 forwards;  
+}
+.MyTitle:nth-child(3){
+	animation: 1s MyTitle 2.5s 1 forwards; 
+}
+
+
+@keyframes MyTitle {
+  0% {
+    opacity: 0;
+    transform: translate3d(1em,1em,1em);
+  }
+   100% {
+    opacity: 0.8;
+    transform: none;
+    }
+}
+
+
+.homebtn{
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+  
+#homesvg{
+      width:100%;
+}
+
+#homesvg .cls-1{fill:#bfe3df;}
+#homesvg .cls-2{fill:none;stroke:#e8f5fa;stroke-miterlimit:10;stroke-width:3px;}
+
+
+
+.homebtn2{
+  display: none;
+  width: 50px;
+  position: absolute;
+  top: 2.25em;
+  left: 2.25em;
+}
+
+
+/* 關於我的動畫效果 */
+
+
+.aboutlogoimg{
+  position: relative;
+    animation: logoshow .5s 1 forwards; 
+  }
+
+@keyframes logoshow {
+
+from{
+    top: 10px;
+    opacity: 0;
+  }
+to{
+    top: 0;
+    opacity: 1;
+  }
+}  
+
+
+/* LOGO的左邊介紹 */
+
+.left-arrow.arrowRight{
+  opacity: 0;
+  left: 0;
+  top: 5%;
+  animation: arrowRight .5s 1 forwards; 
+  animation-delay: .2s;
+}
+
+@keyframes arrowRight {
+
+from{
+  left: 0;
+  top: 5%;
+  opacity: 0;
+}
+to{
+  left: -40px;
+  top:20%;
+  opacity: 1;
+}
+}
+
+
+.left-title.InRight{
+  right: -20px;
+  opacity: 0;
+  animation: InRight .4s 1 forwards;  
+  animation-delay: .5s;
+
+}
+
+
+.left-title::after {
+  right: -20px;
+  opacity: 0;
+  animation: InRight .2s 1 forwards;
+  animation-delay: .5s;
+}
+
+.left-text.InRight{
+  right: -20px;
+  opacity: 0;
+  animation: InRight .5s 1 forwards;  
+  animation-delay: .7s;
+}
+
+
+@keyframes InRight {
+
+from{
+  right: -20px;
+  opacity: 0;
+}
+to{
+  right: 20px;
+  opacity: 1;
+}
+}
+
+
+/* LOGO的右邊介紹 */
+
+
+.right-arrow.arrowleft{
+  right: -40px;
+  bottom:30%;
+  opacity: 0;
+  animation: arrowleft .5s 1 forwards; 
+  animation-delay: 1s;
+}
+
+@keyframes arrowleft {
+
+from{
+  right: -40px;
+  bottom:30%;
+  opacity: 0;
+}
+to{
+  right: -60px;
+  bottom:50%;
+  opacity: 1;
+}
+}
+
+
+.right-title::after {
+  left: -20px;
+  opacity: 0;
+  animation: Inleft .4s 1 forwards;
+  animation-delay: 1.2s;
+}
+
+.right-title.Inleft{
+  left: -20px;
+  opacity: 0;
+  animation: Inleft .2s 1 forwards;  
+  animation-delay: 1.2s;
+
+}
+
+@keyframes Inleft {
+
+from{
+  left: -20px;
+  opacity: 0;
+}
+to{
+  left: 20px;
+  opacity: 1;
+}
+}
+
+.right-text.Inleft{
+  right: -170px;
+  opacity: 0;
+  animation: Inlefttext .5s 1 forwards;  
+  animation-delay: 1.5s;
+}
+
+@keyframes Inlefttext {
+
+from{
+  right: -170px;
+  opacity: 0;
+}
+to{
+  right: -190px;
+  opacity: 1;
+}
+}
+
+
+
+
+
+
