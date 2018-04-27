@@ -366,11 +366,6 @@
 
 
 @media screen and (max-width: 480px) {
-
-    html {
-        font-size: 50%;
-    }
-
     #bottom,
     #top{
         width: 3.7%;
