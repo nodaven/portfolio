@@ -47,7 +47,7 @@
 
     .home{
         position: relative;
-        height: 70vh;
+        height: 100vh;
         padding-top: 0;
     }
 
@@ -482,6 +482,16 @@
 
 
 @media screen and (max-width: 480px) {
+
+
+    .home{
+        height: 90vh;
+    }
+
+    .MyTitle{
+        font-size: 1.7em;
+    }
+
     #bottom,
     #top{
         width: 3.7%;
