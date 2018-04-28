@@ -95,7 +95,7 @@
     #daven, #shape {
         transform: scale(0.9, 0.9)translate(5%, 0);
     }
-    
+
     #logo {
         transform: scale(0.9, 0.9)translate(5%, -5%);
     }
@@ -486,7 +486,7 @@
     .work-title,
     .work-title.red,
     .work-title.small{
-        font-size: 2.5em;
+        font-size: 2.8em;
     }
 
 
