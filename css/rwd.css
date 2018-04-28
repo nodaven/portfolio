@@ -482,7 +482,9 @@
 
 
 @media screen and (max-width: 480px) {
-
+    .work-title{
+        font-size: 2.7em;
+    }
 
     .home{
         height: 90vh;
@@ -641,6 +643,10 @@
 
 
 @media screen and (max-width: 400px) {
+
+    .work-title{
+        font-size: 2.5em;
+    }
 
     .about-logo {
         transform: scale(0.8,0.8);
