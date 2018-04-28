@@ -95,6 +95,7 @@
     #daven, #shape {
         transform: scale(0.9, 0.9)translate(5%, 0);
     }
+    
     #logo {
         transform: scale(0.9, 0.9)translate(5%, -5%);
     }
@@ -482,9 +483,12 @@
 
 
 @media screen and (max-width: 480px) {
-    .work-title{
-        font-size: 2.7em;
+    .work-title,
+    .work-title.red,
+    .work-title.small{
+        font-size: 2.5em;
     }
+
 
     .home{
         height: 90vh;
@@ -644,8 +648,10 @@
 
 @media screen and (max-width: 400px) {
 
-    .work-title{
-        font-size: 2.5em;
+    .work-title,
+    .work-title.red,
+    .work-title.small{
+        font-size: 2em;
     }
 
     .about-logo {
