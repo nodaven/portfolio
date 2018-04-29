@@ -1188,20 +1188,23 @@ footer{
 	margin-right: 5px;
 	font-family: EnglishTitle;
 	letter-spacing: 1px;
+	transition: .2s;
 }
 
 .exp-name{
 	color: #bbb;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	line-height: 30px;
+	transition: .2s;
 }
 
 .exp-think{
 	color: #5ed6c8;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	line-height: 30px;
 	letter-spacing: 1px;
 	text-align: left;
+	transition: .2s;
 }
 
 .exp-name1{
@@ -1242,6 +1245,20 @@ footer{
 	height: 1px;
 	background-color: #adc5cc;
 	opacity: 0.5;
+}
+
+
+.about-exp:hover .exp-year{
+	text-decoration: underline;
+}
+
+.about-exp:hover .exp-name{
+	color:#666;
+}
+
+.about-exp:hover .exp-think{
+	color:#00baa3;
+	transform: scale(1.05, 1.05);
 }
 
 
