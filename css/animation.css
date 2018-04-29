@@ -22,9 +22,8 @@
   stroke-dasharray: 1500;
   stroke-dashoffset: 100%;
   stroke-width: 1px;
-  animation: 2.6s outline 1 forwards;
+  animation: 2s outline 1 forwards;
 }
-
 
 @keyframes outline {
   from {
@@ -38,32 +37,100 @@
   }
 }
 
+#svg_layout2 #leaf-2{
+   stroke: none;
+   fill: none;
+   stroke-dasharray: 1500;
+   stroke-dashoffset: 100%;
+   stroke-width: 1px;
+  animation: 2s outline 1 forwards;
+}
 
-#eye{
-  stroke: none;
-  fill: none;
-  animation: 2.6s fill 1 forwards;  
+#svg_layout #leaf-2{
+   stroke: none;
+   fill: none;
+   stroke-dasharray: 1500;
+   stroke-dashoffset: 100%;
+   stroke-width: 1px;
+  animation: 2s outline 1 forwards,.2s 3s leaf-rotate2 2 forwards; 
+  transform-origin:60% 20%;
+  transform:rotate(0deg); 
 }
 
 
-#eye-2{
-  stroke: none;
-  fill: none;
-  transform: rotate(180deg);
-  animation: 2.6s fill 1 forwards,2s 2s eye-rotate2 1 forwards; 
+@keyframes leaf-rotate2 {
+  0% {transform:rotate(0deg);}
+  50% {transform:rotate(-10deg);}
+  100%{transform:rotate(0deg);}
 }
 
-/* 
+#svg_layout2 #leaf{
+  stroke: none;
+  fill: none;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 100%;
+  stroke-width: 1px;
+ animation: 2s outline 1 forwards;
+}
+
+#svg_layout #leaf{
+  stroke: none;
+  fill: none;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 100%;
+  stroke-width: 1px;
+ animation: 2s outline 1 forwards,.2s 3s leaf-rotate 2 forwards; 
+ transform-origin:60% 20%;
+ transform:rotate(0deg);
+}
+
+
+@keyframes leaf-rotate {
+  0% {transform:rotate(0deg);}
+  50% {transform:rotate(10deg);}
+  100%{transform:rotate(0deg);}
+}
+
+#svg_layout #eye{
+  stroke: none;
+  fill: none;
+  animation: 2s fill 1 forwards,.4s 2.7s eye-rotate2 1 forwards; 
+  transform:rotate(360deg); 
+  transform-origin: 83.2% 63.5%; 
+}
+
+
+#svg_layout #eye-2{
+  stroke:none;
+  fill:none;
+  transform:rotate(360deg);
+  animation: 2s fill 1 forwards,.4s 2.7s eye-rotate2 1 forwards; 
+  transform-origin: 47% 72.5%;
+}
+
+
+#svg_layout2 #eye{
+  stroke: none;
+  fill: none;
+  animation: 2s fill 1 forwards;
+}
+
+
+#svg_layout2 #eye-2{
+  stroke:none;
+  fill:none;
+  animation: 2s fill 1 forwards;
+}
+
+
 @keyframes eye-rotate2 {
   from{
-    transform: rotate(0deg);
-    transform-origin: 47.2% 72.7%;
+    transform:rotate(360deg);
   }
   to {
-    transform: rotate(180deg);
-    transform-origin: 47.2% 72.7%;
+    transform:rotate(0deg);
   }
-} */
+}
 
 
 @keyframes fill {
@@ -105,7 +172,7 @@
 	stroke-dasharray: 100%;
 	stroke-dashoffset: 100%;
 	stroke-width: 1px;
-	animation: 2s text_line 1s 1 forwards;
+	animation: 1s text_line 1s 1 forwards;
 }
 
 
@@ -133,7 +200,7 @@
 #left,
 #right{
   fill: none;
-  animation: 2.6s polygon 1 forwards;  
+  animation: 1s polygon 1 forwards;  
 }
 
 @keyframes polygon{
@@ -163,13 +230,13 @@
 }
 
 .MyTitle{
-	animation: 1s MyTitle 1.5s 1 forwards;  
+	animation: .5s MyTitle 1.5s 1 forwards;  
 }
 .MyTitle:nth-child(2){
-	animation: 1s MyTitle 2s 1 forwards;  
+	animation: .5s MyTitle 1.9s 1 forwards;  
 }
 .MyTitle:nth-child(3){
-	animation: 1s MyTitle 2.5s 1 forwards; 
+	animation: .5s MyTitle 2.3s 1 forwards; 
 }
 
 
@@ -197,7 +264,34 @@
 }
 
 #homesvg .cls-1{fill:#bfe3df;}
-#homesvg .cls-2{fill:none;stroke:#e8f5fa;stroke-miterlimit:10;stroke-width:3px;}
+#homesvg .cls-2{fill:none;stroke:#e8f5fa;stroke-miterlimit:10;stroke-width:3px;transition: .2s;}
+
+#homesvg:hover .cls-2{stroke: #b6f0ed;}
+#homesvg:hover .cls-1{fill: #b6f0ed;}
+
+#homesvg:hover #sproutleaf{
+  transform:rotate(0deg);
+  transform-origin:50% 50%;
+  animation: .4s homeleaf infinite forwards; 
+}
+
+
+@keyframes homeleaf{
+  0% {transform:rotate(20deg);}
+   100% {transform:rotate(0deg);}
+}
+
+#homesvg:hover #sproutleaf-2{
+  transform:rotate(0deg);
+  transform-origin:50% 50%;
+  animation: .4s homeleaf2 infinite forwards; 
+}
+
+@keyframes homeleaf2{
+  0% {transform:rotate(-10deg);}
+   100% {transform:rotate(0deg);}
+}
+
 
 
 

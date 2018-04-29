@@ -290,13 +290,13 @@
 }
 
 .imgbox-left {
-    width: 80%;
+    width: 90%;
     margin-right: 0;
     margin-bottom: 20px;
 }
 
 .imgbox-right {
-    width: 30%;
+    width: 45%;
 }
 
 .imgbox-center-5{
@@ -325,7 +325,7 @@
 }
 
 .rwd-show{
-    display: block;
+    display: inline-block;
 }
 
 .rwd-hide{
@@ -345,7 +345,7 @@
 }
 
 .nextbtn a {
-    margin-left: -120%;
+    margin-left: -90%;
 }
 
 
@@ -664,6 +664,10 @@
 
     .about-logo {
         transform: scale(0.7,0.7);
+    }
+
+    .nextbtn a {
+        margin-left: -20%;
     }
 
 }

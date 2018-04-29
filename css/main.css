@@ -58,8 +58,7 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #fff;
-	margin: 1% 10px;	
+	margin: 1% 9px;	
 }
 
 .menu li a{
@@ -67,7 +66,7 @@ nav{
 	color: #787878;
 	font-size:1.8em;
 	letter-spacing: 2px;
-	width: 100px;
+	width: 85px;
 	height: 24px;		
 }
 
@@ -82,7 +81,7 @@ nav{
 /* 英文選單 */
 .e-menu,
 .c-menu{
-	width: 100px;
+	width: 85px;
 	height: 24px;
 	display: flex;
 	justify-content: center;
@@ -93,6 +92,7 @@ nav{
 .e-title{
 	top: 0;
 	position: relative;	
+	background-color: #fff;
 }
 
 /* 第一的選單 */
@@ -172,7 +172,8 @@ nav{
 	opacity: 0;
 	top: 0;
 	position: relative;
-	margin-right: 1px;	
+	margin-right: 1px;
+	background-color: #fff;	
 }
 
 .c-title:nth-child(1){
@@ -501,6 +502,33 @@ nav{
 	border-radius: 100px;
 	transition: .5s;
 }
+
+.work-title::before{
+	opacity: 0;
+	font-family: EnglishTitle;
+	display: inline-block;
+	position: absolute;
+	bottom: -90%;
+	left: 50%;
+	content: '\2911 SEE CASE';
+	z-index: -1;
+	border-radius: 100px;
+	transition: .5s;
+	font-size: 0.6em;
+	color: #b5f2e8;
+	letter-spacing: 1px;
+	width: 100px;
+}
+
+.work-title.active::before{
+	opacity: 1;
+	bottom: -110%;
+}
+
+.work-title.small.active::before{
+	opacity: 0;
+}
+
 
 .work-title.active::after{
 	opacity: 0.5;
@@ -861,21 +889,21 @@ footer{
 }
 
 .rwd-hide{
-	display: block;
+	display:inline-block;
 }
 
 .imgbox-left{
 	align-items: flex-start;
 	display: inline-block;
-	width: 55%;
-	margin-right: 6%;
+	width: 61%;
+	margin-right: 5%;
 	box-shadow: 0 0 30px rgba(0,0,0,0.20);
 }
 
 .imgbox-right{
 	align-items: center;
 	display: inline-block;
-	width: 22%;
+	width: 26%;
 	box-shadow: 0 0 30px rgba(0,0,0,0.20);
 }
 
