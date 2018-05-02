@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
 html,body{
-	font-family: -apple-system, "graphik-lt", "PingFangTC-Light", "Noto Sans Light";
+	font-family: -apple-system, "graphik-lt", "PingFangTC-Light", "Noto Sans Light","Microsoft YaHei","Microsoft JhengHei", "WenQuanYi Micro Hei", sans-serif;
 	position: relative;
 	width: 100vw;
 	height: 100vh;
