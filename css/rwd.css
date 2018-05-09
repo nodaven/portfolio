@@ -279,6 +279,11 @@
 
 .exp-year{
     line-height: 10px;
+    font-size: 1.35em;
+}
+
+.exp-name {
+    color: #999;
 }
 
 .exp-think {
